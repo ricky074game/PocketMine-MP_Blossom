@@ -54,7 +54,7 @@ class SayCommand extends VanillaCommand{
 		}
 
 		$sender->getServer()->broadcastMessage(KnownTranslationFactory::chat_type_announcement(
-			$sender instanceof Player ? $sender->getDisplayName() : ($sender instanceof ConsoleCommandSender ? "§5Blossom §dMinigames §l§6»§r" : $sender->getName()),
+			$sender instanceof Player ? $sender->getDisplayName() : ($sender instanceof ConsoleCommandSender ? "§5Blossom Minigames" : $sender->getName()),
 			implode(" ", $args)
 		)->prefix(TextFormat::LIGHT_PURPLE));
 		return true;
